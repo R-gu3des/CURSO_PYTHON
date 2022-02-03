@@ -13,7 +13,7 @@ with open('Pasta1.csv', 'r') as arquivo:
         lista += [dado] 
         print(dado)
         # lista.append(dado)
-    print("lista",lista[1:])
+    print("lista: ",lista[1:])
 
 print(lista)
 
@@ -41,8 +41,9 @@ with open('Pasta3.csv', "w") as arq:
         delimiter=',',
         quotechar='"',
         quoting=csv.QUOTE_ALL
+        
     )
-
+    print(dados)
     chaves = dados[0].keys()
     chaves = list(chaves)
     
